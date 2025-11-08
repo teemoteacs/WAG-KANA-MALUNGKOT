@@ -5,27 +5,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0f7fa;
+    background-color: #f3e5f5; /* light lavender background */
     font-family: 'Indie Flower', cursive;
     overflow: hidden;
 }
 
 .container {
     text-align: center;
-    background-color: #b3e5fc;
+    background-color: #e1bee7; /* light purple box */
     padding: 40px;
     border-radius: 20px;
-    border: 3px solid #0288d1;
-    box-shadow: 0 8px 20px rgba(2, 136, 209, 0.3);
+    border: 3px solid #8e24aa; /* deep purple border */
+    box-shadow: 0 8px 20px rgba(142, 36, 170, 0.3);
     max-width: 400px;
     width: 90%;
 }
 
 .header_text {
     font-size: 36px;
-    color: #0288d1;
+    color: #8e24aa; /* purple text */
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(2, 136, 209, 0.2);
+    text-shadow: 2px 2px 4px rgba(142, 36, 170, 0.2);
 }
 
 .gif_container img {
@@ -45,31 +45,31 @@ body {
 .btn {
     padding: 12px 24px;
     font-size: 20px;
-    border: 2px solid #0288d1;
+    border: 2px solid #8e24aa;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #0288d1;
+    background-color: #8e24aa;
     color: white;
     font-family: 'Indie Flower', cursive;
-    box-shadow: 0 4px 10px rgba(2, 136, 209, 0.3);
+    box-shadow: 0 4px 10px rgba(142, 36, 170, 0.3);
 }
 
 .btn:hover {
     background-color: white;
-    color: #0288d1;
+    color: #8e24aa;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(2, 136, 209, 0.4);
+    box-shadow: 0 6px 15px rgba(142, 36, 170, 0.4);
 }
 
 #noButton {
-    background-color: #01579b;
-    border-color: #01579b;
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
 }
 
 #noButton:hover {
     background-color: white;
-    color: #01579b;
+    color: #6a1b9a;
 }
 
 @keyframes wiggle {
@@ -93,9 +93,8 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: transparent;
+    background-color: #8e24aa; /* purple heart */
     transform: translate(-50%, -50%);
     animation: heartFade 1s ease-out forwards;
-    background-color: #0288d1;
     border-radius: 50%;
 }
