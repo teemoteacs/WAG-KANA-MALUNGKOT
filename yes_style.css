@@ -4,41 +4,97 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    background-color: #e3f2fd; /* Light blue background */
+    height: 100vh;
+    background-color: #e8bcf0;
     font-family: 'Indie Flower', cursive;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .container {
     text-align: center;
-    background-color: #bbdefb; /* Soft blue */
+    background-color: #8a00c2;
     padding: 40px;
     border-radius: 20px;
-    border: 3px solid #64b5f6; /* Medium blue border */
-    box-shadow: 0 8px 20px rgba(100, 181, 246, 0.3); 
-    max-width: 600px; 
-    width: 90%; 
+    border: 3px solid #da8ee7;
+    box-shadow: 0 8px 20px rgba(2, 136, 209, 0.3);
+    max-width: 400px;
+    width: 90%;
 }
 
 .header_text {
-    font-size: 50px;
-    font-weight: bold;
-    color: #1976d2; /* Darker blue */
-    margin: 20px 0;
-    text-shadow: 2px 2px 4px rgba(25, 118, 210, 0.2); 
-}
-
-.gif_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 36px;
+    color: #0288d1;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(2, 136, 209, 0.2);
 }
 
 .gif_container img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid #4c00b0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #be2ed6;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 0 4px 10px rgba(2, 136, 209, 0.3);
+}
+
+.btn:hover {
+    background-color: white;
+    color: #4c00b0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(2, 136, 209, 0.4);
+}
+
+#noButton {
+    background-color: #4c00b0;
+    border-color: #4c00b0;
+}
+
+#noButton:hover {
+    background-color: white;
+    color: #4c00b0;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes heartFade {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); }
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4c00b0;
+    transform: translate(-50%, -50%);
+    animation: heartFade 1s ease-out forwards;
+    border-radius: 50%;
+}
