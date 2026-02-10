@@ -23,7 +23,7 @@ body {
 
 .header_text {
     font-size: 36px;
-    color: #0288d1;
+    color: #000000;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(2, 136, 209, 0.2);
 }
@@ -98,3 +98,4 @@ body {
     animation: heartFade 1s ease-out forwards;
     border-radius: 50%;
 }
+
